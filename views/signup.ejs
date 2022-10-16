@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+	<body>
+        <div>
+            <form class="form" action="/index" method="POST">
+                <header>
+                    <div>
+                        <h2>Sign Up</h2>
+                        <a href="/" class="a02">x</a>
+                        <p>It's quick and easy.</p>
+                        <hr>
+                    </div>
+                </header>
+                <main>
+                    <input class="input" type="text" placeholder="First Name" name="name"size="43">
+                    <input class="input" type="text" placeholder="Surname" name="surname" size="43"><br>
+                    <input  class="input" type="text" placeholder="Mobile number or email address" name="mobo" size="92">
+                    <input class="input" type="password" placeholder="New password" name="password"size="92">
+                    <div class="gender">
+                        <p><strong>Gender</strong></p>
+                        <div class="gendermargin">
+                            <div class="button">
+                                <input type="radio" id="day" name="gender" value="Female">
+                                <label for="Female">Female</label>
+                            </div>
+                            <div class="button">
+                                <input type="radio" id="day" name="gender" value="Male">
+                                <label for="Male">Male</label>
+                            </div>
+                            <div class="button">
+                                <input type="radio" id="day" name="gender" value="Custom">
+                                <label for="Custom">Custom</label><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p><strong>Latest Education</strong></p>
+                        <input class="input" type="text" placeholder="Class" name="class" size="18">
+                        <input class="input" type="text" placeholder="School Name" name="school" size="19">
+                        <input class="input" type="text" placeholder="Marks Percentage" name="marks" size="18">
+                        <input class="input" type="text" placeholder="State" size="18" name="state">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </main>
+            </form>
+        </div>
+    </body>
+</html>

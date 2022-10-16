@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <h1>DASHBOARD</h1>
+        <hr>
+    </head>
+    <body class="indexbody">
+        <main>
+            <div class="a01">
+                <a href="/create">Sign Up</a>
+            </div>
+            <div>
+                <p><strong>Student Info</strong></p>
+                <table>
+                    <thead>
+                        <th>S.NO.</th>
+                        <th> STUDENT NAME </th>
+                    </thead>
+                    <!-- <%=(i=0)%> -->
+                    <% data.forEach(stu =>{ %>
+                        <th><%=(i+=1)%></th>
+                        <th><%= stu.name%>  <%= stu.surname%> <%= stu.gender%></th>
+
+
+                    <thead>
+                    <% }) %>
+                        <th></th>
+                        <th> </th>
+                    </thead>
+                </table>
+            </div>
+        </main> 
+    </body>
+</html>

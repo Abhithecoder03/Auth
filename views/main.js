@@ -9,7 +9,7 @@ const { urlencoded } = require('express');
 
 //using expresss
 const app = express();
-const mdburl='mongodb+srv://Abhidemo03:9696858107@cluster0.jf2t9qo.mongodb.net/Student?retryWrites=true&w=majority';
+const mdburl='';
 mongoose.connect(mdburl,{useNewUrlParser: true,useUnifiedTopology:true})
 .then((result)=>app.listen(4000))
 .catch((err)=>console.log(err));
